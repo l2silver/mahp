@@ -10,6 +10,7 @@
     "test-watch": "watch 'npm run test' test src",
     "coverage": "babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/.bin/tape -- test/**/*_test.js",
     "coverage-watch": "watch 'npm run coverage' test src",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "lint": "eslint src"
   },
   "repository": {

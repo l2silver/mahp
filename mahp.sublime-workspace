@@ -1,0 +1,788 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"verify",
+				"verifyConfig"
+			],
+			[
+				"specif",
+				"specificConfigs"
+			],
+			[
+				"routes",
+				"routesObjectExpected"
+			],
+			[
+				"global",
+				"globalConfigs"
+			],
+			[
+				"route",
+				"routesNotCalled"
+			],
+			[
+				"get",
+				"getConfig"
+			],
+			[
+				"gl",
+				"globalProps"
+			],
+			[
+				"resource",
+				"resourceProperties"
+			],
+			[
+				"mock",
+				"mockServer"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"list",
+				"list-unstyled"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"class",
+				"classnames"
+			],
+			[
+				"s",
+				"setStore"
+			],
+			[
+				"li",
+				"dispatchList"
+			],
+			[
+				"disp",
+				"dispatchList"
+			],
+			[
+				"table",
+				"tableName"
+			],
+			[
+				"from",
+				"fromJS"
+			],
+			[
+				"as",
+				"asMutable"
+			],
+			[
+				"start",
+				"startGlobe"
+			],
+			[
+				"se",
+				"selectedList"
+			],
+			[
+				"child",
+				"childListTables"
+			],
+			[
+				"chil",
+				"childListTables"
+			],
+			[
+				"_",
+				"_globeInstance"
+			],
+			[
+				"todo",
+				"todoLists"
+			],
+			[
+				"merge",
+				"mergeWithGlobe"
+			],
+			[
+				"merg",
+				"mergeWithGlobe"
+			],
+			[
+				"mer",
+				"mergeWithGlobe"
+			],
+			[
+				"ne",
+				"nextObject"
+			],
+			[
+				"globe",
+				"globeTree"
+			],
+			[
+				"re",
+				"recursiveSetInitialObject"
+			],
+			[
+				"action",
+				"actionsImport"
+			],
+			[
+				"compon",
+				"components"
+			],
+			[
+				"compone",
+				"componentHelpers"
+			],
+			[
+				"co",
+				"core"
+			],
+			[
+				"com",
+				"components"
+			],
+			[
+				"ex",
+				"expectedState"
+			],
+			[
+				"a",
+				"attributes"
+			],
+			[
+				"delete",
+				"deleteGlobe"
+			],
+			[
+				"delet",
+				"deleteTree"
+			],
+			[
+				"del",
+				"deleteTree"
+			],
+			[
+				"next",
+				"nextGlobe"
+			],
+			[
+				"map",
+				"mapObject"
+			],
+			[
+				"add",
+				"addTreeToObject"
+			],
+			[
+				"this",
+				"thisObject"
+			],
+			[
+				"new",
+				"newOrderedMap"
+			],
+			[
+				"or",
+				"orderedMap"
+			],
+			[
+				"check",
+				"checkTWREntries"
+			],
+			[
+				"Or",
+				"OrderedMap"
+			],
+			[
+				"_in",
+				"_instanceTWR"
+			],
+			[
+				"firs",
+				"_firstInstance"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"not",
+				"notSetValue"
+			],
+			[
+				"getIn",
+				"getInstance"
+			],
+			[
+				"List",
+				"ListTree"
+			],
+			[
+				"onFa",
+				"onFailureCBCreator"
+			],
+			[
+				"CREATE",
+				"CREATE_ERROR"
+			],
+			[
+				"combin",
+				"combinedContent"
+			],
+			[
+				"combine",
+				"combineContent"
+			],
+			[
+				"error",
+				"errorArgs"
+			],
+			[
+				"err",
+				"errorArgs"
+			],
+			[
+				"createE",
+				"createEventTrain"
+			],
+			[
+				"combined",
+				"combinedFunctions"
+			],
+			[
+				"comb",
+				"combinedFunctions"
+			],
+			[
+				"respon",
+				"responseCreator"
+			],
+			[
+				"call",
+				"callforward"
+			],
+			[
+				"form",
+				"formContent"
+			],
+			[
+				"create",
+				"createEventTrain"
+			],
+			[
+				"tests",
+				"tests_error"
+			],
+			[
+				"comp",
+				"componentProperties"
+			],
+			[
+				"def",
+				"defaultGetProperties"
+			],
+			[
+				"TWR",
+				"StupidTWRLink"
+			],
+			[
+				"pa",
+				"pagitterStoresEnd"
+			],
+			[
+				"pagi",
+				"pagitterStoresCreate"
+			],
+			[
+				"up",
+				"updatingGlobalVariables"
+			],
+			[
+				"raw",
+				"rawVariableValue"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/index.js",
+			"settings":
+			{
+				"buffer_size": 1913,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "linter",
+		"selected_items":
+		[
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/leigh/Documents/mahp",
+		"/Users/leigh/Documents/mahp/coverage/lcov-report",
+		"/Users/leigh/Documents/mahp/coverage/lcov-report/src",
+		"/Users/leigh/Documents/mahp/node_modules/.bin",
+		"/Users/leigh/Documents/mahp/src"
+	],
+	"file_history":
+	[
+		"/Users/leigh/Documents/mahp/src/index.js",
+		"/Users/leigh/Documents/mahp/.eslintrc",
+		"/Users/leigh/Documents/mahp/package.json",
+		"/Users/leigh/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/leigh/Documents/mahp/test/index_test.js",
+		"/Users/leigh/Documents/mahp/coverage/coverage.json",
+		"/Users/leigh/Documents/mahp/test/test_helper.js",
+		"/Users/leigh/Documents/mahp/test/index_spec.js",
+		"/Users/leigh/Documents/mahp/index_spec.js",
+		"/Users/leigh/Documents/mahp/test/.eslintrc",
+		"/Users/leigh/Documents/mahp/.babelrc",
+		"/Users/leigh/Documents/circ/src/api/index.js",
+		"/Users/leigh/Documents/circ/api/hello.js",
+		"/Users/leigh/Documents/circ/src/index.js",
+		"/Users/leigh/Documents/circ/index.js",
+		"/Users/leigh/Documents/circ/api/index.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/template-home.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/template-blog.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/template-services.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/functions.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/template-service.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/single.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/html5blank-stable/page.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/shapely/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/shapely/page.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/shapely/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/websites/podiatry/wp-content/themes/shapely/style.css",
+		"/Users/leigh/Documents/fb/client/components/TodoTextInput/index.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/component_properties_spec.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/creatorsHelpers_spec.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/creators_spec.js",
+		"/Users/leigh/Documents/two-way-rest/lib/creators.js",
+		"/Users/leigh/Documents/two-way-rest/lib/componentHelpers.js",
+		"/Users/leigh/Documents/two-way-rest/lib/creatorsHelpers.js",
+		"/Users/leigh/Documents/two-way-rest/lib/componentProperties.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/components_spec.js",
+		"/Users/leigh/Documents/two-way-rest/package.json",
+		"/Users/leigh/Documents/two-way-rest/README.md",
+		"/Users/leigh/Documents/two-way-rest/README.html",
+		"/Users/leigh/Documents/twrb/package.json",
+		"/Users/leigh/Documents/two-way-rest/__test__/mapState_spec.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest/lib/componentProperties.js",
+		"/Users/leigh/Documents/twrb/client/App/index2.js",
+		"/Users/leigh/Documents/two-way-rest/lib/mapState.js",
+		"/Users/leigh/Documents/two-way-rest/lib/fetch.js",
+		"/Users/leigh/Documents/two-way-rest/.travis.yml",
+		"/Users/leigh/Documents/twrb/mydb.sqlite",
+		"/Users/leigh/Documents/twrb/Readme.md",
+		"/Users/leigh/Documents/twrb/client/App/index.js",
+		"/Users/leigh/Documents/two-way-rest/lib/components.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest2/lib/componentProperties.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest/lib/components.js",
+		"/Users/leigh/Documents/twrb/client/store/index.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest2/lib/core.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest2/lib/mapState.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest2/lib/components.js",
+		"/Users/leigh/Documents/twrb/.babelrc",
+		"/Users/leigh/Documents/twrb/client/App.js",
+		"/Users/leigh/Documents/twrb/client/App/style.css",
+		"/Users/leigh/Documents/twrb/client/index.js",
+		"/Users/leigh/Documents/twrb/client/index2.js",
+		"/Users/leigh/Documents/twrb/webpack.config.js",
+		"/Users/leigh/Documents/twrb/client/index.html",
+		"/Users/leigh/Documents/two-way-rest/lib/core.js",
+		"/Users/leigh/Documents/twrb/client/reducers/todos.js",
+		"/Users/leigh/Documents/twrb/node_modules/two-way-rest/dist/componentHelpers.js",
+		"/Users/leigh/Documents/twrbb/node_modules/two-way-rest/lib/componentProperties.js",
+		"/Users/leigh/Documents/twrbb/client/App/index.js",
+		"/Users/leigh/Documents/twrbb/node_modules/two-way-rest/lib/mapState.js",
+		"/Users/leigh/Documents/twrbb/node_modules/two-way-rest/lib/creatorsHelpers.js",
+		"/Users/leigh/Documents/twrbb/node_modules/two-way-rest/lib/core.js",
+		"/Users/leigh/Documents/twrb/client/reducers/index.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/core_spec.js",
+		"/Users/leigh/Documents/two-way-rest/lib/reducers.js",
+		"/Users/leigh/Documents/two-way-rest/lib/index.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/fetch_spec.js",
+		"/Users/leigh/Documents/two-way-rest/node_modules/immutable/dist/immutable.js",
+		"/Users/leigh/Documents/two-way-rest/lib/actions.js",
+		"/Users/leigh/Documents/two-way-rest/lib/proofOfConcept.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/test_helper.js",
+		"/Users/leigh/Documents/two-way-rest/__test__/creators_specc.js",
+		"/Users/leigh/Documents/two-way-rest/.pagitterStores/twr.js",
+		"/Users/leigh/Documents/two-way-rest/pagitter.js",
+		"/Users/leigh/Documents/two-way-rest/pgt.config.js",
+		"/Users/leigh/Documents/two-way-rest/npm-debug.log",
+		"/Users/leigh/Documents/testRouter/package.json",
+		"/Users/leigh/Documents/testRouter/pagitter.js",
+		"/Users/leigh/Documents/testRouter/pgt.config.js",
+		"/Users/leigh/Documents/testRouter/src/index.js",
+		"/Users/leigh/Documents/testRouter/src/App.js",
+		"/Users/leigh/Documents/testRouter/node_modules/.bin/pgt",
+		"/Users/leigh/Documents/leighsilverstein/app/assets/javascripts/controllers/HomeController.coffee",
+		"/Users/leigh/Documents/leighsilverstein/app/assets/javascripts/templates/writings/node_vs_ruby.html",
+		"/Users/leigh/Documents/leighsilverstein/app/assets/javascripts/controllers/WritingController.coffee",
+		"/Users/leigh/Documents/leighsilverstein/app/assets/javascripts/controllers/ResumeController.coffee",
+		"/Users/leigh/Documents/leighsilverstein/Gemfile",
+		"/Users/leigh/Documents/pagitter/package.json",
+		"/Users/leigh/Documents/pagitter/pagitter.js",
+		"/Users/leigh/Documents/pagitter/bin/pgt.js",
+		"/Users/leigh/Documents/pagitter/example/example.js",
+		"/Users/leigh/Documents/pagitter/__test__/pagitter-remove_spec.js",
+		"/Users/leigh/Documents/pagitter/lib/pagitter-store.js",
+		"/Users/leigh/Documents/pagitter/lib/index.js",
+		"/Users/leigh/Documents/pagitter/lib/pagitter-remove.js",
+		"/Users/leigh/Documents/pagitter/__test__/index_spec.js"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/leigh/Documents/two-way-rest/lib,",
+			"/Users/leigh/Documents/twrb/client,",
+			"/Users/leigh/Documents/twrb/, -/Users/leigh/Documents/twrb/node_modules",
+			"/Users/leigh/Documents/twrb/client",
+			"/Users/leigh/Documents/two-way-rest/lib",
+			"/Users/leigh/Documents/two-way-rest/node_modules/react/lib"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"while",
+			"h1",
+			"address",
+			"p {",
+			"text-align: center",
+			"rgba",
+			"section",
+			"color:",
+			"li",
+			"current",
+			"-container",
+			"section",
+			"240",
+			"getStore",
+			"_nextArgs",
+			".travis.yml",
+			"console.log",
+			"tree",
+			"gex",
+			"outTree",
+			"console.log",
+			"reset",
+			"resetF",
+			"reset",
+			"resetFunction",
+			"reset",
+			"globeType",
+			"consoleo",
+			"tree",
+			"selectedTodoList",
+			"selectedList",
+			"selectList",
+			"sameGlobe",
+			"console.log",
+			"_ids",
+			"gex",
+			"globalResetFunction",
+			"this.context.list",
+			"gex",
+			"outTree",
+			"margin-left",
+			"'i'",
+			"inflection",
+			"console.log",
+			"nock",
+			"<<<",
+			"instance: function",
+			"function: instance",
+			"getTree",
+			"instance",
+			".toJS()",
+			"createTree",
+			"Map",
+			"map",
+			"findDomNode",
+			"submitForm",
+			"getPage",
+			"getInstance",
+			"globalReset",
+			"react-router-redux",
+			"redux-thunk",
+			"create",
+			"combineConte",
+			"customAction",
+			"createEve",
+			"parent",
+			"TWRUpdateFront",
+			"import * as ",
+			" from",
+			"export",
+			"import * as",
+			"substateCreate",
+			"substateDelete",
+			"urlPath",
+			"getTree",
+			"create",
+			"function create",
+			"only",
+			"des",
+			"only",
+			"toMap",
+			"getIn",
+			"getIn'",
+			"getIn",
+			"mapFactory",
+			"getIn",
+			"Map.prototype.getIn",
+			"Map",
+			"outTree",
+			"Type",
+			"type",
+			"Type",
+			"type",
+			"only",
+			"push",
+			"createError",
+			"createId",
+			"createErrorContent",
+			"pgte",
+			"createError",
+			"update",
+			"createElement",
+			"Context",
+			"ReactContext",
+			"CreateContext",
+			"checkUpdate",
+			"mount",
+			"nock",
+			"console.log",
+			"setIndex",
+			"set_index",
+			"defaultGetProp",
+			"only",
+			"defaultPostFrontProperties",
+			"defaultPostProperties",
+			"form-data",
+			"console",
+			"writeStores",
+			"last",
+			".last",
+			"last",
+			"pagitter",
+			"match",
+			".match",
+			"file.match",
+			".match",
+			"match",
+			"console"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"marginLeft",
+			"export const",
+			"Import from",
+			"export const",
+			"export const ",
+			"export",
+			"1"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								817,
+								817
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "mahp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"serv",
+				"template-service.php"
+			],
+			[
+				"",
+				"two-way-rest/__test__/mapState_spec.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 358.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
