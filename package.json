@@ -1,0 +1,47 @@
+{
+  "name": "mahp",
+  "version": "0.0.1",
+  "description": "A simple resource mapper for hapijs routes",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "build-watch": "'npm run build' -w",
+    "test": "tape -r babel-register test/**/*_test.js",
+    "test-watch": "watch 'npm run test' test src",
+    "coverage": "babel-node ./node_modules/.bin/babel-istanbul cover ./node_modules/.bin/tape -- test/**/*_test.js",
+    "coverage-watch": "watch 'npm run coverage' test src",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l2silver/mahp.git"
+  },
+  "keywords": [
+    "resource",
+    "hapijs",
+    "hapi"
+  ],
+  "author": "Leigh Silverstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l2silver/mahp/issues"
+  },
+  "homepage": "https://github.com/l2silver/mahp#readme",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-istanbul": "^0.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "code": "^3.0.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.10.2",
+    "eslint-plugin-babel": "^3.2.0",
+    "istanbul": "^0.4.3",
+    "lab": "^10.6.1",
+    "tape": "^4.5.1",
+    "watch": "^0.18.0"
+  },
+  "dependencies": {}
+}
