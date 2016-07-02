@@ -1,4 +1,24 @@
-export default function(resourceProperties){
+// @flow
+
+type resourceConfig = Object;
+type only = Array<string>;
+type ajax = bool;
+type name = string;
+type resourceProperties = {
+	controller: Object;
+	name: name;
+	only?: only;
+	ajax?: ajax;
+	globals?: resourceConfig;
+	index?: resourceConfig;
+	show?: resourceConfig;
+	delete?: resourceConfig;
+	store?: resourceConfig;
+	update?: resourceConfig;
+	edit?: resourceConfig;
+	create?: resourceConfig;
+};
+export default function(resourceProperties: resourceProperties){
 	verify(resourceProperties)
 	const resources = whichResources(resourceProperties.only, resourceProperties.ajax)
 	const globalConfig = getConfig(resourceProperties.globals, 'globals')
@@ -13,7 +33,7 @@ export default function(resourceProperties){
 	})
 }
 
-export function verify(resourceProperties){
+export function verify(resourceProperties: resourceProperties){
 	if(!resourceProperties){
 		throw Error('You must include the resource\'s properties')
 	}
@@ -25,13 +45,13 @@ export function verify(resourceProperties){
 	}
 }
 
-export function verifyConfig(config, type){
+export function verifyConfig(config: resourceConfig, type: name){
 	if(config.toType() !== 'object'){
 		throw Error(type + ' property must be an object')
 	}
 }
 
-export function getConfig(config, type){
+export function getConfig(config: resourceConfig, type: name){
 	if(config){
 		verifyConfig(config, type)
 		return config
@@ -49,13 +69,13 @@ export const resourcesMethodsAndUrl = {
 		delete: {method: 'DELETE', suffix: '/{id}'}
 	}
 
-export function whichResources(only, ajax){
+export function whichResources(only: only, ajax: ajax){
 	if(only)
 		return only
 	return resourceTypes(ajax)
 }
 
-export function resourceTypes(ajax = true){
+export function resourceTypes(ajax: ajax = true){
 	if(ajax){
 		return ['show', 'index', 'update', 'store', 'delete']
 	}

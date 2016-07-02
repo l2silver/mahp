@@ -1,3 +1,4 @@
+// @flow
 import test from 'tape'
 import mahp, {resourceTypes, whichResources, verify, getConfig, verifyConfig} from './../src'
 const ajaxMethods = ['show', 'index', 'update', 'store', 'delete']
