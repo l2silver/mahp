@@ -18,6 +18,11 @@ type resourceProperties = {
 	edit?: resourceConfig;
 	create?: resourceConfig;
 };
+
+function toType(obj){
+	return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
+}
+
 export default function(resourceProperties: resourceProperties){
 	verify(resourceProperties)
 	const resources = whichResources(resourceProperties.only, resourceProperties.ajax)
@@ -47,7 +52,7 @@ export function verify(resourceProperties: resourceProperties){
 }
 
 export function verifyConfig(config: resourceConfig, type: name){
-	if(config.toType() !== 'object'){
+	if(toType(config) !== 'object'){
 		throw Error(type + ' property must be an object')
 	}
 }
@@ -82,10 +87,3 @@ export function resourceTypes(ajax: ajax = true){
 	}
 	return ['create', 'edit', 'show', 'index', 'update', 'store', 'delete']
 }
-
-
-Object.prototype.toType = function() {
-  return ({}).toString.call(this).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
-}
-
-
