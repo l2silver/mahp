@@ -25,8 +25,9 @@ export default function(resourceProperties: resourceProperties){
 	return resources.map(resource=>{
 		const {method, suffix} = resourcesMethodsAndUrl[resource]
 		const path = '/'+resourceProperties.name + suffix
-		const handler = resourceProperties.controller[resource]
-		const config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource) )
+		const handler = resourceProperties.controller[resource].handler
+		const validate = resourceProperties.controller[resource].validate;
+		const config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource), validate ? {validate} : {})
 		return {
 			method, path, handler, config
 		}

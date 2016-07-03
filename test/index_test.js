@@ -14,7 +14,8 @@ const routesObjectExpected =  {
 }
 const ajax = false
 const controller = allMethods.reduce((ExampleController, action)=>{
-	ExampleController[action] = action
+	ExampleController[action] = {};
+	ExampleController[action].handler = action;
 	return ExampleController
 },{})
 const name = 'examples'

@@ -14,8 +14,9 @@ exports.default = function (resourceProperties) {
 		var suffix = _resourcesMethodsAndU.suffix;
 
 		var path = '/' + resourceProperties.name + suffix;
-		var handler = resourceProperties.controller[resource];
-		var config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource));
+		var handler = resourceProperties.controller[resource].handler;
+		var validate = resourceProperties.controller[resource].validate;
+		var config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource), { validate: validate });
 		return {
 			method: method, path: path, handler: handler, config: config
 		};
