@@ -7,7 +7,6 @@ type name = string;
 type resourceProperties = {
 	controller: Object;
 	name: name;
-	ajax?: ajax;
 	globals?: resourceConfig;
 	index?: resourceConfig;
 	show?: resourceConfig;
@@ -35,8 +34,14 @@ export default function(resourceProperties: resourceProperties){
 			suffix = resourcesMethodsAndUrl[resource].suffix;
 		}
 		const {validate, handler} = controller[resource];
+		
 		const config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource), validate ? {validate} : {})
+		
+		
 		const path = '/'+name + suffix
+		
+		
+		
 		return {
 			method, path, handler, config
 		}
