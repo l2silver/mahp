@@ -7,7 +7,6 @@ type name = string;
 type resourceProperties = {
 	controller: Object;
 	name: name;
-	only?: only;
 	ajax?: ajax;
 	globals?: resourceConfig;
 	index?: resourceConfig;
@@ -24,15 +23,20 @@ function toType(obj){
 }
 
 export default function(resourceProperties: resourceProperties){
-	verify(resourceProperties)
-	const resources = whichResources(resourceProperties.only, resourceProperties.ajax)
-	const globalConfig = getConfig(resourceProperties.globals, 'globals')
-	return resources.map(resource=>{
-		const {method, suffix} = resourcesMethodsAndUrl[resource]
-		const path = '/'+resourceProperties.name + suffix
-		const handler = resourceProperties.controller[resource].handler
-		const validate = resourceProperties.controller[resource].validate;
+	verify(resourceProperties);
+	const {controller, globals, name} = resourceProperties;
+	const globalConfig = getConfig(globals, 'globals')
+	return Object.keys(resourceProperties.controller).map(resource=>{
+		let {method, suffix} = controller[resource];
+		if(!method){
+			method = resourcesMethodsAndUrl[resource].method;
+		}
+		if(!suffix){
+			suffix = resourcesMethodsAndUrl[resource].suffix;
+		}
+		const {validate, handler} = controller[resource];
 		const config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource), validate ? {validate} : {})
+		const path = '/'+name + suffix
 		return {
 			method, path, handler, config
 		}
@@ -66,24 +70,11 @@ export function getConfig(config: resourceConfig, type: name){
 }
 
 export const resourcesMethodsAndUrl = {
-		create: {method: 'GET', suffix: '/create'},
-		edit: {method: 'GET', suffix: '/{id}/edit'},
-		show: {method: 'GET', suffix: '/{id}'},
-		index: {method: 'GET', suffix: ''},
-		update: {method: 'PUT', suffix: '/{id}'},
-		store: {method: 'POST', suffix: ''},
-		delete: {method: 'DELETE', suffix: '/{id}'}
-	}
-
-export function whichResources(only: only, ajax: ajax){
-	if(only)
-		return only
-	return resourceTypes(ajax)
-}
-
-export function resourceTypes(ajax: ajax = true){
-	if(ajax){
-		return ['show', 'index', 'update', 'store', 'delete']
-	}
-	return ['create', 'edit', 'show', 'index', 'update', 'store', 'delete']
+	create: {method: 'GET', suffix: '/create'},
+	edit: {method: 'GET', suffix: '/{id}/edit'},
+	show: {method: 'GET', suffix: '/{id}'},
+	index: {method: 'GET', suffix: ''},
+	update: {method: 'PUT', suffix: '/{id}'},
+	store: {method: 'POST', suffix: ''},
+	delete: {method: 'DELETE', suffix: '/{id}'}
 }
