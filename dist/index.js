@@ -6,17 +6,31 @@ Object.defineProperty(exports, "__esModule", {
 
 exports.default = function (resourceProperties) {
 	verify(resourceProperties);
-	var resources = whichResources(resourceProperties.only, resourceProperties.ajax);
-	var globalConfig = getConfig(resourceProperties.globals, 'globals');
-	return resources.map(function (resource) {
-		var _resourcesMethodsAndU = resourcesMethodsAndUrl[resource];
-		var method = _resourcesMethodsAndU.method;
-		var suffix = _resourcesMethodsAndU.suffix;
+	var controller = resourceProperties.controller;
+	var globals = resourceProperties.globals;
+	var name = resourceProperties.name;
 
-		var path = '/' + resourceProperties.name + suffix;
-		var handler = resourceProperties.controller[resource].handler;
-		var validate = resourceProperties.controller[resource].validate;
+	var globalConfig = getConfig(globals, 'globals');
+	return Object.keys(resourceProperties.controller).map(function (resource) {
+		var _controller$resource = controller[resource];
+		var method = _controller$resource.method;
+		var suffix = _controller$resource.suffix;
+
+		if (!method) {
+			method = resourcesMethodsAndUrl[resource].method;
+		}
+		if (!suffix) {
+			suffix = resourcesMethodsAndUrl[resource].suffix;
+		}
+		var _controller$resource2 = controller[resource];
+		var validate = _controller$resource2.validate;
+		var handler = _controller$resource2.handler;
+
+
 		var config = Object.assign({}, globalConfig, getConfig(resourceProperties[resource], resource), validate ? { validate: validate } : {});
+
+		var path = '/' + name + suffix;
+
 		return {
 			method: method, path: path, handler: handler, config: config
 		};
@@ -26,8 +40,6 @@ exports.default = function (resourceProperties) {
 exports.verify = verify;
 exports.verifyConfig = verifyConfig;
 exports.getConfig = getConfig;
-exports.whichResources = whichResources;
-exports.resourceTypes = resourceTypes;
 
 
 function toType(obj) {
@@ -69,17 +81,3 @@ var resourcesMethodsAndUrl = exports.resourcesMethodsAndUrl = {
 	store: { method: 'POST', suffix: '' },
 	delete: { method: 'DELETE', suffix: '/{id}' }
 };
-
-function whichResources(only, ajax) {
-	if (only) return only;
-	return resourceTypes(ajax);
-}
-
-function resourceTypes() {
-	var ajax = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
-
-	if (ajax) {
-		return ['show', 'index', 'update', 'store', 'delete'];
-	}
-	return ['create', 'edit', 'show', 'index', 'update', 'store', 'delete'];
-}
